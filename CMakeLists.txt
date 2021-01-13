@@ -48,3 +48,7 @@ target_link_libraries(LBLJL PRIVATE
 if(OpenMP_CXX_FOUND)
     target_link_libraries(LBLJL PRIVATE OpenMP::OpenMP_CXX)
 endif()
+install (TARGETS LBLJL
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin)
